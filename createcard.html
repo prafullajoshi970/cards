@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <title>Document</title>
+    <style>
+        .main{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+
+  
+}
+.list{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  width:50%
+
+}
+.left-side,.center,.right-side{
+text-align: center;
+}
+
+button{
+  width:20vw;
+  height:8vh;
+  margin:5px;
+  background-color: rgb(241, 107, 130);
+  border:1px solid;
+  border-radius: 5px;
+  color:aliceblue
+}
+img{
+  border-radius: 50%;
+  width:150px;
+  height:150px;
+
+}
+.left-btn{
+  background-color: blueviolet;
+}
+.img-div{
+  border-radius: 50%;
+}
+.num{
+  color:blueviolet
+}
+h3{
+  color:rgb(58, 57, 57);
+}
+p{
+  color: rgb(36, 35, 35);
+}
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+   <script>const myElement = 
+    React.createElement('div',{className:'main'},
+    [React.createElement('div',{className:'imgdiv'},React.createElement('img', { src: 'https://media.istockphoto.com/id/1351285381/photo/happy-young-african-american-woman-looking-at-camera.jpg?b=1&s=170667a&w=0&k=20&c=N31nPlncl1RGZ2IxfQdXTCl9LFN3pD31mWYhzxeRpdY=', alt: 'image-description-here' })),
+      React.createElement('div',{className:'header div'},React.createElement('h1',{},'Alexandra Caulea'),React.createElement('p',{},'I enjoy a cup of coffee drinking Every day')),   
+      React.createElement('div',{className:'list'},React.createElement('div',{className:'left-side'},React.createElement('h3',{className:'num'},'173'),React.createElement('h3',{},'Posts')),React.createElement('div',{className:'center'},React.createElement('h3',{className:'num'},'47'),React.createElement('h3',{},'Followers')),React.createElement('div',{className:'right-side'},React.createElement('h3',{className:'num'},'20'),React.createElement('h3',{},'Following'))),
+         React.createElement('div',{className:'button-div'},React.createElement('button',{className:'left-btn'},'Follow'),React.createElement('button',{},'MESSAGE')),
+   ] )
+   
+   const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(myElement);
+    </script>
+</body>
+</html>
